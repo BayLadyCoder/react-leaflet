@@ -1,9 +1,11 @@
 import { useState } from 'react';
+import 'leaflet/dist/leaflet.css';
+import Map from './components/Map/Map';
 
 function App() {
   return (
     <>
-      <h1>React Leaflet</h1>
+      <Map />
     </>
   );
 }
