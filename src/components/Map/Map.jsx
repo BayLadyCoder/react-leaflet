@@ -1,17 +1,8 @@
 import React from 'react';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { MapContainer, TileLayer } from 'react-leaflet';
 
 import { cities } from '../../data/cities';
-
-const MarkerLayer = ({ coordinates }) => {
-  return (
-    <Marker position={coordinates}>
-      <Popup>
-        A pretty CSS3 popup. <br /> Easily customizable.
-      </Popup>
-    </Marker>
-  );
-};
+import { MarkerLayer } from '../layers/MarkerLayer/MarkerLayer';
 
 const Map = () => {
   const position = [0, 0];
